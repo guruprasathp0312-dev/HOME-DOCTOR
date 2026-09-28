@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Doctor | Smart Telemedicine</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="index.html"><i class="fa-solid fa-house-medical"></i><span>Home<span class="doctor">Doctor</span></span></a>
+  <div class="location"><i class="fa-solid fa-location-dot"></i><span>Healthcare<br><b>Anywhere in India</b></span></div>
+  <div class="search-box">
+    <input id="searchInput" placeholder="Search doctors, symptoms, diseases...">
+    <button onclick="searchSite()"><i class="fa-solid fa-search"></i></button>
+  </div>
+  <button class="header-btn" onclick="location.href='appointments.html'"><i class="fa-solid fa-calendar-check"></i><span>Appointments</span></button>
+  <button class="header-btn" onclick="location.href='doctors.html'"><i class="fa-solid fa-user-doctor"></i><span>Doctors</span></button>
+  <button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<nav class="nav" id="navMenu">
+  <a href="index.html">Home</a>
+  <a href="doctors.html">Doctors</a>
+  <a href="appointments.html">Appointments</a>
+  <a href="medicines.html">Medicines</a>
+  <a href="nearby.html">Nearby Care</a>
+  <a href="#problems">Problems Solved</a>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow"><i class="fa-solid fa-heart-pulse"></i> Healthcare Made Simple</p>
+    <h1>Your Health.<br>Our <span>Priority.</span></h1>
+    <p>Find doctors, manage appointments, understand common disease-related medicines, and discover nearby hospitals and clinics from one place.</p>
+    <div class="hero-buttons">
+      <a class="primary-btn" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Find a Doctor</a>
+      <a class="secondary-btn" href="appointments.html"><i class="fa-solid fa-calendar-plus"></i> Book Appointment</a>
+    </div>
+    <div class="trust">
+      <span><i class="fa-solid fa-shield-heart"></i> Secure Records</span>
+      <span><i class="fa-solid fa-clock"></i> Easy Booking</span>
+      <span><i class="fa-solid fa-location-dot"></i> Nearby Care</span>
+    </div>
+  </div>
+  <div class="hero-panel">
+    <div class="health-orb"><i class="fa-solid fa-house-medical"></i></div>
+    <h2>One app for your healthcare journey</h2>
+    <p>Appointments • Doctors • Medicines • Hospitals</p>
+    <a href="nearby.html" class="small-btn">Find Nearby Care</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading"><div><h2>Home Doctor Features</h2><p>Each major function has its own screen for easier navigation.</p></div></div>
+  <div class="feature-grid">
+    <a class="feature-card" href="appointments.html"><div class="feature-icon"><i class="fa-solid fa-calendar-check"></i></div><h3>Appointments</h3><p>Choose a doctor, date and time and save your booking.</p><span>Open screen →</span></a>
+    <a class="feature-card" href="doctors.html"><div class="feature-icon"><i class="fa-solid fa-user-doctor"></i></div><h3>Doctor Details</h3><p>View specialization, experience, consultation mode and availability.</p><span>Open screen →</span></a>
+    <a class="feature-card" href="medicines.html"><div class="feature-icon"><i class="fa-solid fa-pills"></i></div><h3>Medicines & Diseases</h3><p>Browse general medicine information linked to common conditions.</p><span>Open screen →</span></a>
+    <a class="feature-card" href="nearby.html"><div class="feature-icon"><i class="fa-solid fa-hospital"></i></div><h3>Nearby Hospital & Clinic</h3><p>Use your device location to find nearby healthcare places.</p><span>Open screen →</span></a>
+  </div>
+</section>
+
+<section class="section alt" id="problems">
+  <div class="section-heading"><div><h2>10 Problems. One Smart Solution.</h2><p>Built around the challenges already included in your Home Doctor concept.</p></div></div>
+  <div class="problem-grid">
+    <div class="problem-card"><b>01</b><h3>Doctor Selection</h3><p>Find the right specialist.</p></div>
+    <div class="problem-card"><b>02</b><h3>Patient Information</h3><p>Organize information before consultation.</p></div>
+    <div class="problem-card"><b>03</b><h3>Language Barriers</h3><p>Prepare for multilingual support.</p></div>
+    <div class="problem-card"><b>04</b><h3>Waiting Times</h3><p>Request appointment slots.</p></div>
+    <div class="problem-card"><b>05</b><h3>Rural Access</h3><p>Support remote healthcare.</p></div>
+    <div class="problem-card"><b>06</b><h3>Scattered Records</h3><p>Keep records organized.</p></div>
+    <div class="problem-card"><b>07</b><h3>Follow-up Care</h3><p>Track future appointments.</p></div>
+    <div class="problem-card"><b>08</b><h3>Documentation</h3><p>Prepare information for clinicians.</p></div>
+    <div class="problem-card"><b>09</b><h3>Poor Connectivity</h3><p>Keep alternate contact options.</p></div>
+    <div class="problem-card"><b>10</b><h3>Data Privacy</h3><p>Design secure health-data handling.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="notice"><i class="fa-solid fa-circle-info"></i><div><strong>Important medicine notice</strong><p>This prototype provides educational medicine information only. It does not diagnose disease or prescribe medicines. A doctor or qualified pharmacist should confirm whether a medicine is appropriate, including dose, interactions, allergies and contraindications.</p></div></div>
+</section>
+</main>
+
+<footer><div><h2><i class="fa-solid fa-house-medical"></i> Home Doctor</h2><p>Smart healthcare at your fingertips.</p></div><div><h3>Quick Links</h3><a href="doctors.html">Doctors</a><a href="appointments.html">Appointments</a><a href="medicines.html">Medicines</a><a href="nearby.html">Nearby Care</a></div><div><h3>Support</h3><p>support@homedoctor.example</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

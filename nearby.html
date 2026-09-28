@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Nearby Care | Home Doctor</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
+<body>
+<header class="header"><a class="logo" href="index.html"><i class="fa-solid fa-house-medical"></i><span>Home<span class="doctor">Doctor</span></span></a><div class="location"><i class="fa-solid fa-location-dot"></i><span>Nearby Healthcare</span></div><button class="header-btn" onclick="location.href='appointments.html'"><i class="fa-solid fa-calendar-check"></i><span>Appointments</span></button><button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button></header>
+<nav class="nav" id="navMenu"><a href="index.html">Home</a><a href="doctors.html">Doctors</a><a href="appointments.html">Appointments</a><a href="medicines.html">Medicines</a><a href="nearby.html">Nearby Care</a></nav>
+<main class="page"><div class="page-title"><i class="fa-solid fa-hospital"></i><div><h1>Nearby Hospitals & Clinics</h1><p>Allow location access to find healthcare places around you.</p></div></div>
+<div class="location-box"><button class="primary-btn" onclick="findNearbyCare()"><i class="fa-solid fa-location-crosshairs"></i> Find Nearby Care</button><p id="locationStatus">Your exact location is requested only by your browser for this search.</p></div>
+<div id="nearbyResults" class="nearby-grid"></div></main><script src="script.js"></script></body></html>

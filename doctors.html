@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Doctors | Home Doctor</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
+<body>
+<header class="header"><a class="logo" href="index.html"><i class="fa-solid fa-house-medical"></i><span>Home<span class="doctor">Doctor</span></span></a><div class="location"><i class="fa-solid fa-location-dot"></i><span>Healthcare<br><b>Anywhere in India</b></span></div><button class="header-btn" onclick="location.href='appointments.html'"><i class="fa-solid fa-calendar-check"></i><span>Appointments</span></button><button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button></header>
+<nav class="nav" id="navMenu"><a href="index.html">Home</a><a href="doctors.html">Doctors</a><a href="appointments.html">Appointments</a><a href="medicines.html">Medicines</a><a href="nearby.html">Nearby Care</a></nav>
+<main class="page"><div class="page-title"><i class="fa-solid fa-user-doctor"></i><div><h1>Doctor Details</h1><p>Separate doctor profiles with appointment access.</p></div></div>
+<div class="filters"><input id="doctorSearch" placeholder="Search doctor or specialization..." oninput="renderDoctors()"><select id="specialtyFilter" onchange="renderDoctors()"><option value="">All Specializations</option><option>General Physician</option><option>Cardiologist</option><option>Dermatologist</option><option>Pediatrician</option><option>Dentist</option><option>Psychologist</option></select></div>
+<div id="doctorGrid" class="doctor-grid"></div></main><script src="script.js"></script></body></html>
